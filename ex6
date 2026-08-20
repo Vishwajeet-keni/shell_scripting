@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# If else 
+
+if [ -e linux_shell_scripting_notes.md ]; then
+    echo "The md linux_shell_scripting_notes.md exists"
+else
+    echo "The md linux_shell_scripting_notes.md does not exists"
+fi
+    

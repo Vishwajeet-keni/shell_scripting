@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Input Output
+
+a=`cat /etc/hostname`
+echo "What is your name?:";read name 
+echo 
+
+echo "Hello $name"
+echo 
+
+echo "My server name is $a"
