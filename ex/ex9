@@ -1,0 +1,21 @@
+#!/bin/bash 
+
+# do while is mostly used by deamons as they either need to run conyinously or till a specific condition is fulffiled
+
+count=0
+num=10
+
+while [ $count -lt 10 ]
+do 
+    echo "$num of seconds left to stop this process $1"
+    echo 
+    sleep 1     # delay
+
+    num=`expr $num - 1`
+    count=`expr $count + 1`
+
+done 
+
+echo
+echo "$1 process has been stoped!!!!"
+echo 
