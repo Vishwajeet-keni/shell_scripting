@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ping -c1 100.86.20.102		#to not show ping stats sue ping -c1 <id> &> /dev/null
+	if [ $? -eq 0 ]; then
+		echo "OK"
+	else
+		echo "NOT OK"
+	fi
